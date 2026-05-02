@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Streaming UI</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;               
+                background-color: #0D0D0D;
+                display: flex;
+                width: 100vw;
+                height: 100vh;
+                font-family: 'Space Mono', monospace;
+            }
+            .nav{
+                height: 100vh;
+                width: 15%;
+                background-color: #1A1A2E;             
+            }
+            .logo{
+                color: #FF3366;
+                padding: 40px;
+                margin: 0;
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                color: #C0C0C8;
+                margin: 0;
+                cursor: pointer;
+            }
+            li{
+                margin-top: 40px;
+            }
+            .content-box{
+                display: flex;
+                flex-direction: column;
+                width: 85vw;
+            }
+            .image{
+                background-image: url(https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1000&q=80);
+                height: 47%;
+                width:85vw;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+            .image h5{
+                color: #FF3366;               
+            }
+            .image h2{
+                color: white;               
+            }
+            #imgh5{
+                color: #C0C0C8;
+            }
+            #btn{
+                background-color: #FF3366;
+                font-size: small;
+                border-style: none;
+                padding: 2px 15px;
+                color: white;
+                cursor: pointer;
+            }
+            #btn:hover{
+                background-color: #cc4860;
+                transform: scale(1.1);
+            }
+            .img-content{
+                margin-right: 80%;
+                text-align: center;
+                margin-top: 10%;
+            }
+            .trend{
+                color: white;
+                text-align: center;
+                margin-top: 38px;
+                
+            }
+
+            .box{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 18px;
+                cursor: pointer;
+                flex-wrap: wrap;
+            }
+            .b1{
+                height: 200px;
+                width: 360px;
+                background-color: #1A1A2E;
+                color: white;
+            }
+            #img-b1{
+                height: 110px;
+                width: 360px;
+                display: flex;
+                gap: 37%;
+            }
+            #img-b1 h3{
+                margin: 0;
+            }
+            #b1htag{
+                text-align: center;
+            }
+            #b1htag h6{
+                color: #C0C0C8;
+            }
+
+            .b2{
+                height: 200px;
+                width: 360px;
+                background-color: #1A1A2E;
+                color: white;
+            }
+            #img-b2{
+                height: 110px;
+                width: 360px;
+                background-image: url('https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=400&q=80');
+                background-size: cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+            }
+            #b2htag h6{
+                color: #C0C0C8;
+            }
+            #b2htag{
+                text-align: center;
+            }
+
+            .b3{
+                height: 200px;
+                width: 360px;
+                background-color: #1A1A2E;
+                color: white;
+            }
+            #img-b3{
+                height: 110px;
+                width: 360px;
+                background-image: url('https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=400&q=80');
+                background-size: cover;
+                background-repeat: no-repeat; 
+                background-position: center;
+            }
+            #b3htag h6{
+                color: #C0C0C8;
+            }
+            #b3htag{
+                text-align: center;
+            }
+            
+        </style>        
+    </head>
+    <body>
+ 
+        <div  class="nav">
+            <h3 class="logo">SONIQ</h3>
+            <ul>
+                <li>🏠  Home</li>
+                <li>🔍  Search</a></li>
+                <li>📚  Library</a></li>
+                <li>❤️  Liked</a></li>
+                <li>➕  New Playlist</a></li>
+            </ul>
+        </div>
+        <div class="content-box">
+        <div class="image">
+            <div class="img-content">
+            <h5>FEATURED ALBUM</h5>    
+            <h2>Neon Requiem</h2> 
+            <h5 id="imgh5">The Midnight</h5>
+            <button id="btn">▶ PLAY</button>
+            </div>
+        </div>
+        <h4 class="trend">TRENDING NOW</h4>
+        <div class="box">
+            <div class="b1">
+                <div id="img-b1"><img src="https://images.unsplash.com/photo-1598387993441-">
+                    <h3>album 0</h3>
+                </div>
+                <div id="b1htag">
+                <h4>Album 1</h4>
+                <h6>Artist Name</h6>
+                </div>
+            </div>
+            <div class="b2">
+                <div id="img-b2"></div>
+                <div id="b2htag">
+                <h4>Album 2</h4>
+                <h6>Artist Name</h6>
+                </div>
+            </div>
+            <div class="b3">
+                <div id="img-b3"></div>
+                <div id="b3htag">
+                <h4>Album 3</h4>
+                <h6>Artist Name</h6>
+                </div>                
+            </div>
+        </div>
+        </div>
+    
+    </body>
+</html>
